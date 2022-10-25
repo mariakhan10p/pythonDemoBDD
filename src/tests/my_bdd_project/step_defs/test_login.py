@@ -25,9 +25,7 @@ def browser():
 def click_women(browser,element, page, locator):
     resource = ResourceManager(ResourceManager.get_resource_path(page))
     selector = resource.get_resource(element)
-    # selector_women_btn = "a[title=Women]"
     print(browser.driver.title)
-    # element = browser.driver.find_element(By.CSS_SELECTOR, selector_women_btn)
     element = browser.driver.find_element(locators_list[locator], selector)
     element.click()
 
