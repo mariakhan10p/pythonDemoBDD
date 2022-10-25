@@ -1,4 +1,4 @@
-from tests.my_bdd_project.step_defs.test_login import *
+from tests.women.step_defs.test_women import *
 
 scenarios('../features')
 
